@@ -1,0 +1,21 @@
+.address-card{
+    border: 1px grey solid;
+    padding: 15px;
+
+}
+.name{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.designation{
+    font-style: italic;
+    
+}
+.address{
+    font-size: 15px;
+}
+
+.phone{
+    border: 1px grey solid;
+    padding-left: 15px;
+}

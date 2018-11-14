@@ -1,0 +1,19 @@
+<!-- <app-hello-world></app-hello-world>
+<app-date></app-date>
+
+-->
+<!-- To pass ''value''' to the component as attribute. Example: name='herle' 
+<app-address-card name='herle'></app-address-card>
+
+To pass the ''menber variable''' to the component as attribute. Example: [userAddressCardInput]="userMemberVariable" , 
+userMemberVariable is in app.component.ts class and use "[]" to evaluate the expression, Else it will just take string value. 
+
+-->
+<app-address-card [userAddressCardInput]="userMemberVariable"></app-address-card>
+<br />
+
+<!--  Two way data binding using banana-in-box  [(variable)] where [] used to get data from component (.ts) to the view (.html) and () used to push the data from view to component-->
+<input type="text" [(ngModel)]='inputTextmemberVariable' /> {{inputTextmemberVariable}}
+
+<!-- Component from ViewModel -->
+<app-test></app-test>

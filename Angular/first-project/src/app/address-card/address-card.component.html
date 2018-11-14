@@ -1,0 +1,14 @@
+<div class="address-card">
+  <h1 class="name">{{user.name}}</h1>
+  <h2 class="designation">{{user.designation}}</h2>
+  <button (click)="toogleCollapse()">Details</button>
+  <div *ngIf="!isCollapsedMemberVariable">
+    <p> {{user.address}} </p>
+    <div class="phone" *ngIf="user.phone.length>0">
+      <p> Phone: </p>
+      <!-- looping with ngFor. This is called as directive-->
+      <p *ngFor="let phoneNumber of user.phone"> {{phoneNumber}} </p>
+    </div>
+  </div>
+
+</div>
